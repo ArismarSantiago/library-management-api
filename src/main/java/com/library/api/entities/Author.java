@@ -32,6 +32,10 @@ public class Author {
         this.biography = biography;
     }
 
+    public Set<Book> getBooks() {
+        return books;
+    }
+
     public Long getId() {
         return id;
     }
