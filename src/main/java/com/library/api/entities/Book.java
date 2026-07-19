@@ -47,13 +47,18 @@ public class Book {
     public Book() {
     }
 
-    public Book(String title, String isbn, LocalDate publicationDate, Boolean available, Long author_id, Long category_id) {
+    public Book(String title, String isbn, LocalDate publicationDate, Boolean available, Long author_id, Long category_id, Author author) {
         this.title = title;
         this.isbn = isbn;
         this.publicationDate = publicationDate;
         this.available = available;
         this.author_id = author_id;
         this.category_id = category_id;
+        this.author = author;
+    }
+
+    public Set<Borrowing> getBorrowings() {
+        return borrowings;
     }
 
     public Long getId() {

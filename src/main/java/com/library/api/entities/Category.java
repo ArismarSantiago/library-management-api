@@ -29,6 +29,10 @@ public class Category {
         this.description = description;
     }
 
+    public Set<Book> getBooks() {
+        return books;
+    }
+
     public Long getId() {
         return id;
     }

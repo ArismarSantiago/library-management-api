@@ -37,6 +37,10 @@ public class Borrowing {
     public Borrowing() {
     }
 
+    public Set<LibraryUser> getLibraryUsers() {
+        return libraryUsers;
+    }
+
     public Borrowing(Instant borrowDate, Instant expectedReturnDate, Instant returnDate, BorrowingStatus status, Long user_id, Long book_id) {
         this.borrowDate = borrowDate;
         this.expectedReturnDate = expectedReturnDate;
